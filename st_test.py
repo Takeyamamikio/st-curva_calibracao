@@ -1,5 +1,7 @@
 import streamlit as st
 
-st.title("Oi, Thaisa")
+st.title("Relatório de ocorrências")
 
-st.text("Consegui usar o streamlit! \o/ ")
+with st.form(key="Responsável"):
+    nome = st.text_input(label="Nome:")
+    button = st.form_submit_button("enviar")
